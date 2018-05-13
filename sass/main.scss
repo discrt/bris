@@ -1,0 +1,8 @@
+@import "modules/breakpoints","modules/variables", "modules/reset";
+
+body{
+    background: blue;
+    @include respond("small"){
+        background: red;
+    }
+}
