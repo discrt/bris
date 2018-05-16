@@ -1,0 +1,29 @@
+body{
+    font-family: 'Roboto', Oxygen, Ubuntu, Cantarell, sans-serif
+}
+body{
+    background: $grey;
+}
+.cta{
+    display: inline-block;
+    span{
+        content: "";
+        display: block;
+        background: black;
+        height: 2px;
+        width: 100%;
+        margin-top: 3px;
+    }
+}
+@mixin cta($color){
+        color: $color;
+        span{
+            background: $color;
+    }
+}
+@mixin bg($img){
+    background-image: url(../img/gallery/#{$img}.JPG);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+}

@@ -1,0 +1,57 @@
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@for $i from 1 through 12{
+    .col#{$i}{
+        float: left;
+        width: unquote((($i*100)/12) + '%');
+    }
+}
+
+@each $sizes in xl, l, m, s, xs{
+    @for $i from 1 through 12{
+        
+        @if($sizes =="xs"){
+            @include respond("xsmall"){
+                .#{$sizes}#{$i}{
+                    float: left;
+                    width: unquote((($i*100)/12) + '%');
+                }
+            }
+            
+        }
+        @else if($sizes =="s"){
+            @include respond("small"){
+                .#{$sizes}#{$i}{
+                    float: left;
+                    width: unquote((($i*100)/12) + '%');
+                }
+            }
+            
+        }
+        @else if($sizes =="m"){
+            @include respond("medium"){
+                .#{$sizes}#{$i}{
+                    float: left;
+                    width: unquote((($i*100)/12) + '%');
+                }
+            }
+            
+        }
+        @else if($sizes =="l"){
+            @include respond("large"){
+                .#{$sizes}#{$i}{
+                    float: left;
+                    width: unquote((($i*100)/12) + '%');
+                }
+            }
+            
+        }
+        
+        
+        
+    }
+}
