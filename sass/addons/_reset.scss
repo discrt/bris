@@ -19,16 +19,6 @@
     max-width: 1200px;
     margin: 0 auto;
 }
-.r-container{
-    @extend .container;
-    max-width: 800px;
-}
-.l-container{
-    @extend .container;
-    max-width: 400px;
-    margin-right: 0px;
-    height: 0;
-}
 a{
     text-decoration: none;
 }

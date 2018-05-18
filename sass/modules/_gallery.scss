@@ -1,0 +1,23 @@
+#gallery{
+    padding: 160px 0 100px;
+    .container{
+        background: white;
+        .row{
+            padding: 0 2vw;
+            h3{
+                padding: 2vw;
+            }
+        }
+        .col4{
+            padding: 0 2vw;
+            
+        }
+        iframe{
+            width: 100%;
+        }
+        img{
+            padding: 2vw 0;
+            width: 100%;
+        }
+    }
+}
