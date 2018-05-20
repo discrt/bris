@@ -361,7 +361,9 @@ footer .container .col4 h5, #hero h1, #about .container .row1 h3, #about .contai
 .loader {
   width: 100%;
   height: 100vh;
-  background: #29339B; }
+  background: #29339B;
+  position: absolute;
+  z-index: 9999; }
 
 .book {
   top: 50%;
@@ -663,12 +665,13 @@ footer {
     right: 0;
     z-index: -999; }
 @media (max-width: 1000px) {
-  #hero .right-boxes, #hero .box-1, #hero .box-2, #hero .box-3 {
+  #hero .right-boxes, #hero .box-1, #hero .box-3 {
     display: none; }
-  #hero .cta {
-    color: #29339B; }
-    #hero .cta span {
-      background: #29339B; } }
+  #hero .bottom-boxes .box-2 {
+    width: 100%; }
+  #hero h6 {
+    left: 50%;
+    transform: translateX(-50%); } }
 @media (max-width: 800px) {
   #hero .container {
     padding: 30vh 0; } }

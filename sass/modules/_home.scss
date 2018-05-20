@@ -87,11 +87,15 @@
         }
     }
     @include respond("large"){
-        .right-boxes, .box-1, .box-2, .box-3{
+        .right-boxes, .box-1, .box-3{
             display: none;
         }
-        .cta{
-            @include cta($purple);
+        .bottom-boxes .box-2{
+            width: 100%;
+        }
+        h6{
+            left: 50%;
+        transform: translateX(-50%);
         }
     }
     @include respond("medium"){
