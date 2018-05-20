@@ -435,7 +435,7 @@ nav {
 footer {
   background: white; }
   footer .container {
-    padding: 10vh 0 5vh; }
+    padding: 10vh 0 2vh; }
     footer .container .col4 {
       padding-bottom: 5vh; }
       footer .container .col4 h5 {
@@ -469,7 +469,7 @@ footer {
     footer .container .social a:hover svg path {
       fill: white; }
     footer .container p {
-      padding: 1rem 0;
+      padding: 0.5rem 0;
       font-size: 0.9rem;
       color: #4f4f4f; }
     footer .container span {
@@ -690,5 +690,46 @@ body {
     #gallery .container img {
       padding: 2vw 0;
       width: 100%; }
+
+#contact {
+  padding: 160px 0 0; }
+  #contact .row {
+    padding: 2rem 0 2rem 2rem;
+    background: #F9C22E; }
+    #contact .row .container {
+      padding: 0 0 2rem 1rem; }
+      #contact .row .container h3 {
+        padding: 1rem 0;
+        font-size: 2rem; }
+      #contact .row .container h5 {
+        padding: 0.5rem 0; }
+    #contact .row iframe {
+      height: 50vh;
+      width: 100%; }
+
+#form .col9 {
+  padding: 2rem 0 2rem 3rem; }
+#form form p {
+  padding: 0.75rem 0; }
+#form form label {
+  color: #4f4f4f;
+  display: inline;
+  vertical-align: top; }
+#form form input, #form form textarea {
+  width: 80%;
+  background: white;
+  padding-bottom: 0.5rem; }
+#form form button {
+  margin: 0 auto;
+  cursor: pointer;
+  background: #53B3CB;
+  color: white;
+  padding: 0.5rem 1rem; }
+#form .col3 {
+  background: #53B3CB;
+  height: 50vh; }
+@media (max-width: 1000px) {
+  #form .col3 {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */

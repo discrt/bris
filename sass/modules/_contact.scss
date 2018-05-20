@@ -1,0 +1,63 @@
+#contact{
+    padding: 160px 0 0;
+    .row{
+        padding: 2rem 0 2rem 2rem;
+        background: $yellow;
+        .container{
+            padding: 0 0 2rem 1rem;
+            h3{
+                padding: 1rem 0;
+                font-size: 2rem;
+            }
+            h5{
+
+                padding: 0.5rem 0;
+            }
+        }
+        iframe{
+            height: 50vh;
+            width: 100%;
+        }
+    }
+}
+#form{
+    .col9{
+        padding: 2rem 0 2rem 3rem;
+    }
+    form{
+        p{
+            padding: 0.75rem 0;
+        }
+        label{
+            color: $dark-grey;
+            display: inline;
+            vertical-align: top;
+        }
+        input{
+            width: 80%;
+            background: white;
+            padding-bottom: 0.5rem;
+        }
+        textarea{
+            @extend input;
+        }
+        button{
+            margin: 0 auto;
+            cursor: pointer;
+            background: $cyan;
+            color: white;
+            padding: 0.5rem 1rem;
+
+        }
+        
+    }
+    .col3{
+        background: $cyan;
+        height: 50vh;
+    }
+    @include respond("large"){
+        .col3{
+            display: none;
+        }
+    }
+}
