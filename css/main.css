@@ -358,6 +358,64 @@ p{
 footer .container .col4 h5, #hero h1, #about .container .row1 h3, #about .container .row2 h3, #about .container .row3 h3, #news .row h3, #admission .container h3 {
   font-family: 'Roboto Slab', Newslab, Rockwell, Bodoni, serif; }
 
+.loader {
+  width: 100%;
+  height: 100vh;
+  background: #29339B; }
+
+.book {
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+  margin: 0 auto;
+  border: 5px solid #f2f2f2;
+  width: 100px;
+  height: 60px; }
+
+.book__page {
+  position: absolute;
+  left: 50%;
+  top: -5px;
+  margin: 0 auto;
+  border-top: 5px solid #f2f2f2;
+  border-bottom: 5px solid #f2f2f2;
+  border-right: 5px solid #f2f2f2;
+  background: #29339B;
+  width: 50px;
+  height: 60px;
+  transform-origin: 0% 50%;
+  animation: flip 1.2s infinite linear;
+  animation-fill-mode: forwards; }
+  .book__page:nth-child(1) {
+    z-index: -1;
+    animation-delay: 1.4s; }
+  .book__page:nth-child(2) {
+    z-index: -2;
+    animation-delay: 2.8s; }
+  .book__page:nth-child(3) {
+    z-index: -3;
+    animation-delay: 4.2s; }
+
+@keyframes flip {
+  0% {
+    transform: perspective(600px) rotateY(0deg); }
+  20% {
+    background: #1e2673; }
+  29.9% {
+    background: #1e2673; }
+  30% {
+    transform: perspective(200px) rotateY(-90deg);
+    background: #29339B; }
+  54.999% {
+    opacity: 1; }
+  55% {
+    opacity: 0; }
+  60% {
+    transform: perspective(200px) rotateY(-180deg);
+    background: #29339B; }
+  100% {
+    transform: perspective(200px) rotateY(-180deg);
+    background: #29339B; } }
 body {
   font-family: "Roboto", Oxygen, Ubuntu, Cantarell, sans-serif; }
 

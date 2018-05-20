@@ -1,3 +1,10 @@
+ //loader
+
+ $(window).on('load', function(){
+     $(".loader").fadeOut();
+ });
+ 
+ 
  //Navbar functions
     //Navabar responsive functions
     $("#menu").on("click", function(){
