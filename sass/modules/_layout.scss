@@ -98,6 +98,37 @@ nav{
 }
 
 
+//enroll link
+#enroll{
+    position: relative;
+    padding: 25vh 0;
+    overflow: hidden;
+    @include bg("bg");
+    h2{
+        padding-bottom: 2rem;
+        color: $yellow;
+    }
+    text-align: center;
+    h5{
+        position: absolute;
+        top: 1rem;
+        color: white;
+        animation: 20s roll linear infinite; 
+    }
+    @keyframes roll {
+        from{
+            transform: translateX(100vw);
+        }
+        to{
+            transform: translateX(-100%);
+        }
+        
+    }
+    .cta{
+        @include cta(white);
+    }
+}
+
 //footer
 
 footer{
