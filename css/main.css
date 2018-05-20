@@ -355,7 +355,7 @@ h6{
 p{
     font-size: 1rem;
 }*/
-footer .container .col4 h5, #hero h1 {
+footer .container .col4 h5, #hero h1, #about .container .row1 h3, #about .container .row2 h3, #about .container .row3 h3, #news .row h3, #admission .container h3 {
   font-family: 'Roboto Slab', Newslab, Rockwell, Bodoni, serif; }
 
 nav {
@@ -648,7 +648,7 @@ body {
       height: 80vw;
       max-height: 400px; } }
 
-#enroll {
+#enroll, .enroll-contact {
   position: relative;
   padding: 25vh 0;
   overflow: hidden;
@@ -657,10 +657,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center; }
-  #enroll h2 {
+  #enroll h2, .enroll-contact h2 {
     padding-bottom: 2rem;
     color: #F9C22E; }
-  #enroll h5 {
+  #enroll h5, .enroll-contact h5 {
     position: absolute;
     top: 1rem;
     color: white;
@@ -670,9 +670,9 @@ body {
     transform: translateX(100vw); }
   to {
     transform: translateX(-100%); } }
-  #enroll .cta {
+  #enroll .cta, .enroll-contact .cta {
     color: white; }
-    #enroll .cta span {
+    #enroll .cta span, .enroll-contact .cta span {
       background: white; }
 
 #gallery {
@@ -731,5 +731,170 @@ body {
 @media (max-width: 1000px) {
   #form .col3 {
     display: none; } }
+
+#about {
+  padding: 160px 0 100px; }
+  #about .container .row1 {
+    background: white; }
+    #about .container .row1 h3 {
+      padding: 3rem; }
+    #about .container .row1 p {
+      padding: 0.5rem 3rem 3rem;
+      color: #4f4f4f; }
+    #about .container .row1 .col4 {
+      background-image: url(../img/gallery/about.JPG);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      height: 65vh; }
+  #about .container .col4 {
+    padding: 0 2vw; }
+  #about .container iframe {
+    width: 100%; }
+  #about .container img {
+    padding: 2vw 0;
+    width: 100%; }
+  #about .container .row2 {
+    background: #29339B; }
+    #about .container .row2 h3 {
+      padding: 3rem;
+      color: white; }
+    #about .container .row2 p {
+      padding: 0.5rem 3rem 3rem;
+      color: #f2f2f2; }
+    #about .container .row2 .col4 {
+      height: 60vh;
+      background: #F9C22E; }
+    @media (max-width: 1000px) {
+      #about .container .row2 .col3, #about .container .row2 .col4 {
+        display: none; } }
+  #about .container .row3 {
+    background: #53B3CB;
+    padding-bottom: 3rem; }
+    #about .container .row3 h3 {
+      padding: 3rem;
+      color: white; }
+    #about .container .row3 p {
+      padding: 0.5rem 3rem;
+      color: #f2f2f2; }
+
+#news .row {
+  padding-bottom: 3rem; }
+  #news .row h3 {
+    padding: 2rem 0;
+    text-align: center; }
+  #news .row img {
+    width: 100%;
+    padding: 0.5rem; }
+
+#admission {
+  padding: 160px 0 100px; }
+  #admission .container h3 {
+    padding-bottom: 2rem; }
+  #admission .container h4 {
+    padding: 2rem 0 1.75rem; }
+  #admission .container .notes {
+    background: white;
+    padding: 2rem 5vw; }
+    #admission .container .notes p:first-child {
+      padding-bottom: 0.5rem; }
+    #admission .container .notes .sub {
+      padding-left: 2rem; }
+  #admission .container .test {
+    margin-top: 4rem;
+    background: #53B3CB;
+    padding: 2rem 5vw;
+    color: white; }
+    #admission .container .test p {
+      color: #f2f2f2; }
+  #admission .container .fee {
+    background: white;
+    padding: 2rem 5vw; }
+    #admission .container .fee p:first-child {
+      padding-bottom: 0.5rem; }
+  #admission .container p {
+    color: #4f4f4f;
+    padding: 0.5rem 0 0.5rem 1rem;
+    width: 90%;
+    max-width: 1000px; }
+  #admission .container .material-icons {
+    font-size: 18px; }
+
+#cbse {
+  padding-bottom: 5rem; }
+  #cbse .container {
+    padding: 1rem 2rem;
+    background: white;
+    max-width: 600px;
+    box-shadow: 0 0 50px -10px rgba(79, 79, 79, 0.1); }
+    #cbse .container p {
+      display: inline-block; }
+    #cbse .container .cta {
+      vertical-align: middle;
+      float: right;
+      color: #29339B; }
+      #cbse .container .cta span {
+        background: #29339B; }
+  @media (max-width: 800px) {
+    #cbse .container {
+      text-align: center; }
+      #cbse .container p {
+        display: block; }
+      #cbse .container .cta {
+        padding-top: 0.35rem;
+        float: none; } }
+
+.enroll-contact {
+  background-image: url(../img/gallery/bg2.JPG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .enroll-contact h4 {
+    color: #29339B; }
+  .enroll-contact .cta {
+    color: #141414; }
+    .enroll-contact .cta span {
+      background: #141414; }
+
+#activities {
+  padding: 160px 0 100px; }
+  #activities .container h3 {
+    padding: 0 1rem; }
+  #activities .container .row {
+    margin: 3rem  0;
+    padding: 0 0 0 2rem;
+    background: white; }
+    #activities .container .row h4 {
+      padding: 3rem 0 1rem; }
+    #activities .container .row p {
+      padding: 1.5rem 1rem 1rem 0; }
+    #activities .container .row:nth-child(2) {
+      border-bottom: solid 10px #29339B; }
+    #activities .container .row:nth-child(3) {
+      border-bottom: solid 10px #F9C22E; }
+    #activities .container .row:nth-child(4) {
+      border-bottom: solid 10px #53B3CB; }
+    #activities .container .row:nth-child(5) {
+      border-bottom: solid 10px #29339B; }
+    #activities .container .row:nth-child(6) {
+      border-bottom: solid 10px #F9C22E; }
+    #activities .container .row:nth-child(7) {
+      border-bottom: solid 10px #53B3CB; }
+    #activities .container .row:nth-child(8) {
+      border-bottom: solid 10px #29339B; }
+    #activities .container .row:nth-child(9) {
+      border-bottom: solid 10px #F9C22E; }
+    #activities .container .row:nth-child(10) {
+      border-bottom: solid 10px #29339B; }
+  #activities .container .col4 {
+    background-image: url(../img/gallery/yoga.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh; }
+  @media (max-width: 800px) {
+    #activities .container .row {
+      padding-right: 2rem; } }
 
 /*# sourceMappingURL=main.css.map */

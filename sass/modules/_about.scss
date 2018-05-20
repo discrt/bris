@@ -1,0 +1,84 @@
+#about{
+    padding: 160px 0 100px;
+    .container{
+        
+        .row1{
+            background: white;
+            h3{
+                padding: 3rem;
+                @extend %font-slab;
+            }
+            p{
+                padding: 0.5rem 3rem 3rem;
+                color: $dark-grey;
+            }
+            .col4{
+               
+                @include bg("about");
+                position: relative;
+                height: 65vh;
+            }
+        }
+        .col4{
+            padding: 0 2vw;
+            
+        }
+        iframe{
+            width: 100%;
+        }
+        img{
+            padding: 2vw 0;
+            width: 100%;
+        }
+        .row2{
+            background: $purple;
+            h3{
+                padding: 3rem;
+                color: white;
+                @extend %font-slab;
+            }
+            p{
+                padding: 0.5rem 3rem 3rem;
+                color: $grey;
+            }
+            .col4{
+                height: 60vh;
+                background: $yellow;
+            }
+            @include respond("large"){
+                .col3, .col4{
+                    display: none;
+                }
+            }
+        }
+        .row3{
+            background: $cyan;
+            padding-bottom: 3rem;
+            h3{
+                padding: 3rem;
+                color: white;
+                @extend %font-slab;
+            }
+            p{
+                padding: 0.5rem 3rem;
+                color: $grey;
+            }
+        }
+        
+    }
+}
+#news{
+    .row{
+        padding-bottom: 3rem;
+        h3{
+            padding: 2rem 0;
+            text-align: center;
+            @extend %font-slab;
+        }
+        
+        img{
+            width: 100%;
+            padding: 0.5rem;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+#admission{
+    padding: 160px 0 100px;
+    .container{
+        
+        h3{
+            @extend %font-slab;
+            padding-bottom: 2rem;
+        }
+        h4{
+            padding: 2rem 0 1.75rem;
+        }
+        .notes{
+            background: white;
+            padding: 2rem 5vw;
+            p:first-child{
+                padding-bottom: 0.5rem;
+            }
+            .sub{
+                padding-left: 2rem;
+            }
+            
+        }
+        .test{
+            margin-top: 4rem; 
+            background: $cyan;
+            padding: 2rem 5vw;
+            color: white;
+            p{
+                color: $grey;
+            }
+        }
+        .fee{
+            background: white;
+            padding: 2rem 5vw;
+            p:first-child{
+                padding-bottom: 0.5rem;
+            }
+        }
+        p{
+            color: $dark-grey;
+            padding: 0.5rem 0 0.5rem 1rem;
+            width: 90%;
+        max-width: 1000px;
+
+        }
+        .material-icons{
+            font-size: 18px;
+        }
+        
+    }
+}
+#cbse{
+    padding-bottom: 5rem;
+    .container{
+        padding: 1rem 2rem;
+        background: white;
+        max-width: 600px;
+        box-shadow: 0 0 50px -10px transparentize($color: $dark-grey, $amount: 0.9);
+        p{
+           display: inline-block;
+        }
+        .cta{
+            vertical-align: middle;
+            float: right;
+            
+            @include cta($purple);
+        }
+        
+    }
+    @include respond("medium"){
+        .container{
+            text-align: center;
+            p{
+            display: block;
+            }
+            .cta{
+                padding-top: 0.35rem;
+                float: none;
+            }
+        
+    }
+    }
+}
+
+//enroll link
+.enroll-contact{
+    @extend #enroll;
+    @include bg("bg2");
+    h4{
+       
+        color: $purple;
+        
+    }
+    
+    .cta{
+        @include cta($black);
+    }
+}
+

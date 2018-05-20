@@ -1,0 +1,56 @@
+#activities{
+    padding: 160px 0 100px;
+    .container{
+        h3{
+            padding: 0 1rem;
+        }
+        .row{
+            margin: 3rem  0;
+            padding: 0 0 0 2rem;
+            background: white;
+            h4{
+                padding: 3rem 0 1rem;
+            }
+            p{
+                padding: 1.5rem 1rem 1rem 0;
+            }
+            &:nth-child(2){
+                border-bottom: solid #{$width}px $purple;
+            }
+            &:nth-child(3){
+                border-bottom: solid #{$width}px $yellow;
+            }
+            &:nth-child(4){
+                border-bottom: solid #{$width}px $cyan;
+            }
+            &:nth-child(5){
+                border-bottom: solid #{$width}px $purple;
+            }
+            &:nth-child(6){
+                border-bottom: solid #{$width}px $yellow;
+            }
+            &:nth-child(7){
+                border-bottom: solid #{$width}px $cyan;
+            }
+            &:nth-child(8){
+                border-bottom: solid #{$width}px $purple;
+            }
+            &:nth-child(9){
+                border-bottom: solid #{$width}px $yellow;
+            }
+            &:nth-child(10){
+                border-bottom: solid #{$width}px $purple;
+            }
+            
+        }
+        .col4{
+            @include bg("yoga");
+            height: 50vh;
+        }
+        @include respond("medium"){
+            .row{
+                padding-right: 2rem;
+            }
+        }
+    }
+}

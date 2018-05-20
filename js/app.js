@@ -28,7 +28,7 @@ $(window).scroll(function(){
     } else {
         $("nav").addClass("nav-docked");
     }
-    console.log(Wscroll);
+    
 });
 
 //----navabar function end
